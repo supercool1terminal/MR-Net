@@ -57,10 +57,11 @@ For visualization, please run
 ```
 python visualize.py --config config/REAL/camera_real.yaml --test_epoch 40
 ```
-![image](./keypoints%20comparison.png)
+![image](./keypoint_comparison.png)
 
-![image](./Real275%20result.png)
+![image](./pose_comparison.png)
 
+![image](./HouseCat6D_pose_comparison.png)
 
 ## Acknowledgements
 Our implementation leverages the code from these works:
