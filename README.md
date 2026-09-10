@@ -50,12 +50,12 @@ python train.py --config config/REAL/camera_real.yaml
 ## Evaluate 
 - Evaluate on NOCS:
 ```
-python test.py --config config/REAL/camera_real.yaml --test_epoch 40
+python test.py --config config/REAL/camera_real.yaml --test_epoch 30
 ```
 ## Visualization
 For visualization, please run
 ```
-python visualize.py --config config/REAL/camera_real.yaml --test_epoch 40
+python visualize.py --config config/REAL/camera_real.yaml --test_epoch 30
 ```
 ![image](./keypoint_comparison.png)
 
