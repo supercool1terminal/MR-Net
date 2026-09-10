@@ -41,10 +41,23 @@ data
 ├── gts
 └── obj_models
 ```
+### HouseCat6D
+Download and unzip the dataset from [HouseCat6D](https://sites.google.com/view/housecat6d) and the final file structure is as follows:
+```
+HOUSECAT6D_DIR
+├── scene**
+├── val_scene*
+├── test_scene*
+└── obj_models_small_size_final
+```
 ## Train
 ### Training on NOCS
 ```
 python train.py --config config/REAL/camera_real.yaml
+```
+### Training on HouseCat6D
+```
+python train_housecat6d.py --config config/HouseCat6D/housecat6d.yaml
 ```
 
 ## Evaluate 
@@ -52,10 +65,17 @@ python train.py --config config/REAL/camera_real.yaml
 ```
 python test.py --config config/REAL/camera_real.yaml --test_epoch 30
 ```
+- Evaluate on HouseCat6D:
+```
+python test_housecat6d.py --config config/HouseCat6D/housecat6d.yaml --test_epoch 150
+```
 ## Visualization
 For visualization, please run
 ```
 python visualize.py --config config/REAL/camera_real.yaml --test_epoch 30
+```
+```
+python visualize_housecat6d.py --config config/HouseCat6D/housecat6d.yaml --test_epoch 150
 ```
 ![image](./keypoint_comparison.png)
 
